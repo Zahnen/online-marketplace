@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Checkout</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+    <form id="order">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <input id="address" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="shipping" value="overnight" checked>
+          Overnight Shipping
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="shipping" value="2 day" checked>
+          2 day shipping
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="shipping" value="ground" checked>
+          Ground 3-27 business days
+        </label>
+      </div>
+      <button type="submit" class="btn-outline-primary">Submit Order</button>
+    </form>
+    <div id="output">
+      <h1>Thank you for your order!</h1>
+      <p>To confirm, we'll be sending your order to <span id=conf1></span>. We will be shipping via <span id="conf3"></span> to <span id=conf2></span></p>
+    </div>
+      
+  </div>
+</body>
+</html>
